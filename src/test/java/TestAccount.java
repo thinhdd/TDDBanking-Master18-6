@@ -5,10 +5,10 @@ import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import Object.*;
 
+import java.util.List;
+
 import static junit.framework.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.reset;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,4 +35,5 @@ public class TestAccount {
         assertEquals(ac.getValue().getAccountNumber(), accountNumber);
         assertEquals(ac.getValue().getBalance(), 0.0);
     }
+
 }
