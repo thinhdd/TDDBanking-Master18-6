@@ -1,23 +1,23 @@
-import DBControl.BankAccountDAO;
 import Service.BankAccount;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
-import Object.*;
-
-import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 import static org.mockito.Mockito.*;
+import DBControl.BankAccountDAO;
+import Object.BankAccountDTO;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
  * User: thinhdd
  * Date: 6/18/13
- * Time: 1:49 PM
+ * Time: 2:16 PM
  * To change this template use File | Settings | File Templates.
  */
-public class TestAccount {
+public class TestTransaction {
     public BankAccountDAO mockDAO = mock(BankAccountDAO.class);
     public String accountNumber="123456";
     @Before
@@ -27,23 +27,16 @@ public class TestAccount {
         BankAccount.setBankAccountDAO(mockDAO);
     }
     @Test
-    public void testOpenAccount()
+    public void testAccountDeposit()
     {
         ArgumentCaptor<BankAccountDTO> ac = ArgumentCaptor.forClass(BankAccountDTO.class);
-        BankAccount.openAccount(accountNumber);
-        verify(mockDAO).save(ac.capture());
-        assertEquals(ac.getValue().getAccountNumber(), accountNumber);
-        assertEquals(ac.getValue().getBalance(), 0.0);
-    }
-    @Test
-    public void testGetAccount()
-    {
         BankAccountDTO account = BankAccount.openAccount(accountNumber);
         when(mockDAO.getAccount(accountNumber)).thenReturn(account);
-        BankAccountDTO accountresult = BankAccount.getAccount(accountNumber);
-        verify(mockDAO).getAccount(accountNumber);
-        assertEquals(accountresult.getAccountNumber(), accountNumber);
-        assertEquals(accountresult.getBalance(), 0.0);
-    }
+        BankAccount.doDeposit(accountNumber,100.0, "Them 100k");
+        verify(mockDAO,times(2)).save(ac.capture());
+        List<BankAccountDTO> list = ac.getAllValues();
+        assertEquals(list.get(1).getAccountNumber(),accountNumber);
+        assertEquals(list.get(1).getBalance(), 100.0);
 
+    }
 }
