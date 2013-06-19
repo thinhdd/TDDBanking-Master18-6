@@ -2,6 +2,9 @@ package Service;
 
 import DBControl.BankAccountDAO;
 import Object.*;
+
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: thinhdd
@@ -41,5 +44,10 @@ public class BankAccount {
         account.setBalance(-amount);
         bankAccountDAO.save(account);
         Transaction.createTransaction(accountNumber,amount,des, false);
+    }
+
+    public static List<TransactionDTO> getTransactions(String accountNumber) {
+        //To change body of created methods use File | Settings | File Templates.
+        return null;
     }
 }

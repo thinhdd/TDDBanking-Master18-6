@@ -1,6 +1,8 @@
 package DBControl;
 import Object.*;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: thinhdd
@@ -9,11 +11,13 @@ import Object.*;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionDAO {
-    public TransactionDTO getTransaction() {
-        return null;
-    }
 
     public void save(TransactionDTO capture) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public List<TransactionDTO> getManyTransaction(String accountNumber) {
+        return null;
         //To change body of created methods use File | Settings | File Templates.
     }
 }

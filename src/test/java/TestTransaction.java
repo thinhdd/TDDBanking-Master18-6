@@ -91,4 +91,16 @@ public class TestTransaction {
         assertEquals("Rut 50k", list.get(1).getDes());
         assertEquals(2000l, list.get(1).getTimeStamp());
     }
+    @Test
+    public void testGetAllTransactionWithOneAccount(){
+        ArgumentCaptor<TransactionDTO> act = ArgumentCaptor.forClass(TransactionDTO.class);
+        BankAccountDTO account = BankAccount.openAccount(accountNumber);
+        when(mockDAO.getAccount(accountNumber)).thenReturn(account);
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000l,2000l);
+        BankAccount.doDeposit(accountNumber,100.0, "Them 100k");
+        BankAccount.doWithDraw(accountNumber,50.0, "Rut 50k");
+        BankAccount.getTransactions(accountNumber);
+        verify(mockTDAO).getManyTransaction(accountNumber);
+
+    }
 }
