@@ -33,9 +33,13 @@ public class BankAccount {
         BankAccountDTO account = BankAccount.getAccount(accountNumber);
         account.setBalance(amount);
         bankAccountDAO.save(account);
-        Transaction.createTransaction(accountNumber,amount,des);
+        Transaction.createTransaction(accountNumber,amount,des, true);
     }
 
     public static void doWithDraw(String accountNumber, double amount, String des) {
+        BankAccountDTO account = BankAccount.getAccount(accountNumber);
+        account.setBalance(-amount);
+        bankAccountDAO.save(account);
+        Transaction.createTransaction(accountNumber,amount,des, false);
     }
 }

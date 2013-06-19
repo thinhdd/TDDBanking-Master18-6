@@ -14,13 +14,15 @@ public class TransactionDTO {
     public double amount;
     public String des;
     public long timeStamp;
+    public boolean state;
     public static Calendar calendar = Calendar.getInstance();
 
-    public TransactionDTO(String accountNumber, double amount, String des) {
+    public TransactionDTO(String accountNumber, double amount, String des, boolean state) {
         this.accountNumber=accountNumber;
         this.amount=amount;
         this.des=des;
         timeStamp = calendar.getTimeInMillis();
+        this.state=state;
         //To change body of created methods use File | Settings | File Templates.
     }
 
