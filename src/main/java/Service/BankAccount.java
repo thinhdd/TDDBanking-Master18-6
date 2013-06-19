@@ -35,4 +35,7 @@ public class BankAccount {
         bankAccountDAO.save(account);
         Transaction.createTransaction(accountNumber,amount,des);
     }
+
+    public static void doWithDraw(String accountNumber, double amount, String des) {
+    }
 }
