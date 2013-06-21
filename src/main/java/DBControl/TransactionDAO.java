@@ -21,7 +21,8 @@ public class TransactionDAO {
         //To change body of created methods use File | Settings | File Templates.
     }
 
-    public void getManyTransaction(String accountNumber, long l, long l1) {
+    public List<TransactionDTO> getManyTransaction(String accountNumber, long start, long end) {
         //To change body of created methods use File | Settings | File Templates.
+        return null;
     }
 }

@@ -52,6 +52,6 @@ public class BankAccount {
     }
 
     public static List<TransactionDTO> getTransactions(String accountNumber, long start, long end) {
-        return null;
+        return Transaction.getManyTransaction(accountNumber,start,end);
     }
 }

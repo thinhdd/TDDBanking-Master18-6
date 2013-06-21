@@ -29,4 +29,7 @@ public class Transaction {
         return transactionDAO.getManyTransaction(accountNumber);
     }
 
+    public static List<TransactionDTO> getManyTransaction(String accountNumber, long start, long end) {
+        return transactionDAO.getManyTransaction(accountNumber,start,end);  //To change body of created methods use File | Settings | File Templates.
+    }
 }
