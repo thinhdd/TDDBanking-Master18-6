@@ -30,9 +30,11 @@ public class TestTransaction {
     {
         reset(mockDAO);
         reset(mockTDAO);
+        reset(mockCalendar);
         BankAccount.setBankAccountDAO(mockDAO);
         Transaction.setTransactionDAO(mockTDAO);
         TransactionDTO.setMockCalendar(mockCalendar);
+        BankAccountDTO.setCalendar(mockCalendar);
     }
     @Test
     public void testAccountDeposit()
