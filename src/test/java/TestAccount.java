@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import Object.*;
 
+import java.util.Calendar;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
@@ -19,11 +20,14 @@ import static org.mockito.Mockito.*;
  */
 public class TestAccount {
     public BankAccountDAO mockDAO = mock(BankAccountDAO.class);
+    public Calendar mockCalendar = mock(Calendar.class);
     public String accountNumber="123456";
     @Before
     public void setUp()
     {
         reset(mockDAO);
+        reset(mockCalendar);
+        BankAccountDTO.setCalendar(mockCalendar);
         BankAccount.setBankAccountDAO(mockDAO);
     }
     @Test
@@ -38,12 +42,14 @@ public class TestAccount {
     @Test
     public void testGetAccount()
     {
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000l);
         BankAccountDTO account = BankAccount.openAccount(accountNumber);
         when(mockDAO.getAccount(accountNumber)).thenReturn(account);
         BankAccountDTO accountresult = BankAccount.getAccount(accountNumber);
         verify(mockDAO).getAccount(accountNumber);
         assertEquals(accountresult.getAccountNumber(), accountNumber);
         assertEquals(accountresult.getBalance(), 0.0);
+        assertEquals(accountresult.getTimeStamp(),1000l);
     }
 
 }

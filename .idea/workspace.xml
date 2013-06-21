@@ -5,12 +5,12 @@
     <ignored path="TDDBanking-Master18-6.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371797779273" ignored="false" />
-    <file path="/TestAccount.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371539721334" ignored="false" />
+    <file path="/TestAccount.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371801948950" ignored="false" />
     <file path="/fragment.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371627492224" ignored="false" />
     <file path="/BankAccount.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371799660935" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371539017677" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371801532925" ignored="false" />
-    <file path="/TestTransaction.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371801562089" ignored="false" />
+    <file path="/TestTransaction.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371801694132" ignored="false" />
     <file path="/Transaction.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371799690585" ignored="false" />
     <file path="/TransactionDAO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371799719309" ignored="false" />
     <file path="/TransactionDTO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371628977950" ignored="false" />
@@ -84,7 +84,7 @@
       <file leaf-file-name="TestAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0">
+            <state line="20" column="16" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,7 +93,7 @@
       <file leaf-file-name="TestTransaction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="18" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.23544973">
+            <state line="22" column="14" selection-start="532" selection-end="532" vertical-scroll-proportion="0.58465606">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,13 +176,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/BankAccountDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/DBControl/BankAccountDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/Object/TransactionDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/DBControl/TransactionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/Object/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestTransaction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestAccount.java" />
       </list>
     </option>
   </component>
@@ -388,76 +388,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestTransaction.testOpenAccountHasTimeStamp">
-    <configuration default="false" name="TestTransaction.testAccountWithDrawSaveToDB" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TDDBanking-Master18-6" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTransaction" />
-      <option name="METHOD_NAME" value="testAccountWithDrawSaveToDB" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestTransaction.testGetAllTransactionWithOneAccount" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TDDBanking-Master18-6" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTransaction" />
-      <option name="METHOD_NAME" value="testGetAllTransactionWithOneAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestTransaction.testGetTransactionWithFilterTime" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TDDBanking-Master18-6" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTransaction" />
-      <option name="METHOD_NAME" value="testGetTransactionWithFilterTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestTransaction">
     <configuration default="false" name="TestTransaction.testGetTransactionWithFilterCount" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TDDBanking-Master18-6" />
@@ -490,6 +421,75 @@
       <option name="MAIN_CLASS_NAME" value="TestTransaction" />
       <option name="METHOD_NAME" value="testOpenAccountHasTimeStamp" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestTransaction" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TDDBanking-Master18-6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTransaction" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestAccount.testGetAccount" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TDDBanking-Master18-6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAccount" />
+      <option name="METHOD_NAME" value="testGetAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestAccount" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TDDBanking-Master18-6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAccount" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -596,19 +596,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDrawSaveToDB" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetAllTransactionWithOneAccount" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterTime" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterCount" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestTransaction.testOpenAccountHasTimeStamp" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterCount" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestTransaction.testOpenAccountHasTimeStamp" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTransaction" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestAccount.testGetAccount" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestAccount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction.testOpenAccountHasTimeStamp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterCount" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterTime" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetAllTransactionWithOneAccount" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDrawSaveToDB" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestAccount" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestAccount.testGetAccount" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTransaction.testOpenAccountHasTimeStamp" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterCount" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -787,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="42" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
@@ -822,9 +815,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="18" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.23544973">
+        <state line="22" column="14" selection-start="532" selection-end="532" vertical-scroll-proportion="0.58465606">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

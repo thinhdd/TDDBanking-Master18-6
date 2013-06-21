@@ -116,7 +116,7 @@ public class TestTransaction {
     {
         ArgumentCaptor<BankAccountDTO> ac = ArgumentCaptor.forClass(BankAccountDTO.class);
         when(mockCalendar.getTimeInMillis()).thenReturn(1000l);
-        BankAccountDTO account = BankAccount.openAccount(accountNumber);
+        BankAccount.openAccount(accountNumber);
         verify(mockDAO).save(ac.capture());
         assertEquals(ac.getValue().getAccountNumber(), accountNumber);
         assertEquals(ac.getValue().getBalance(), 0.0);
