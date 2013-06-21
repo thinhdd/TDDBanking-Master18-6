@@ -97,4 +97,10 @@ public class TestTransaction {
         verify(mockTDAO).getManyTransaction(accountNumber);
 
     }
+    @Test
+    public void testGetTransactionWithFilterTime()
+    {
+        BankAccount.getTransactions(accountNumber, 1000l, 2000l);
+        verify(mockTDAO).getManyTransaction(accountNumber,1000l, 2000l);
+    }
 }

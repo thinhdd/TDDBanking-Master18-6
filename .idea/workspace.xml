@@ -7,12 +7,12 @@
     <file path="/Dummy.txt" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371797779273" ignored="false" />
     <file path="/TestAccount.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371539721334" ignored="false" />
     <file path="/fragment.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371627492224" ignored="false" />
-    <file path="/BankAccount.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371798151596" ignored="false" />
+    <file path="/BankAccount.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371799344278" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371539017677" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371540033955" ignored="false" />
-    <file path="/TestTransaction.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371629919594" ignored="false" />
+    <file path="/TestTransaction.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371799367742" ignored="false" />
     <file path="/Transaction.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371798116169" ignored="false" />
-    <file path="/TransactionDAO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371629645950" ignored="false" />
+    <file path="/TransactionDAO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371799384296" ignored="false" />
     <file path="/TransactionDTO.java" changelist="6cc84ef3-914b-41d1-84eb-98fdac46741d" time="1371628977950" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +93,7 @@
       <file leaf-file-name="TestTransaction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="23" selection-start="3870" selection-end="3870" vertical-scroll-proportion="0.53071254">
+            <state line="100" column="28" selection-start="4059" selection-end="4059" vertical-scroll-proportion="0.86614174">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,7 +122,7 @@
       <file leaf-file-name="TransactionDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DBControl/TransactionDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+            <state line="24" column="8" selection-start="652" selection-end="725" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,7 +140,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="5" selection-start="1700" selection-end="1851" vertical-scroll-proportion="0.0">
+            <state line="54" column="20" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,10 +179,10 @@
         <option value="$PROJECT_DIR$/src/test/java/TestAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/Object/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Object/TransactionDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DBControl/TransactionDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestTransaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DBControl/TransactionDAO.java" />
       </list>
     </option>
   </component>
@@ -388,30 +388,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestTransaction.testGetAllTransactionWithOneAccount">
-    <configuration default="false" name="TestTransaction.testAccountDeposit" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TDDBanking-Master18-6" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTransaction" />
-      <option name="METHOD_NAME" value="testAccountDeposit" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestTransaction.testGetTransactionWithFilterTime">
     <configuration default="false" name="TestTransaction.testAccountDepositSaveToDB" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TDDBanking-Master18-6" />
@@ -489,6 +466,29 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestTransaction" />
       <option name="METHOD_NAME" value="testGetAllTransactionWithOneAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestTransaction.testGetTransactionWithFilterTime" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TDDBanking-Master18-6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTransaction" />
+      <option name="METHOD_NAME" value="testGetTransactionWithFilterTime" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -596,19 +596,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountDeposit" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountDepositSaveToDB" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDraw" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDrawSaveToDB" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetAllTransactionWithOneAccount" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountDepositSaveToDB" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDraw" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDrawSaveToDB" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetAllTransactionWithOneAccount" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterTime" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetAllTransactionWithOneAccount" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDrawSaveToDB" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDraw" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountDepositSaveToDB" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountDeposit" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetTransactionWithFilterTime" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestTransaction.testGetAllTransactionWithOneAccount" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDrawSaveToDB" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountWithDraw" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestTransaction.testAccountDepositSaveToDB" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -646,8 +646,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.77474403" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22525597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.51365185" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48634812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -801,20 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DBControl/TransactionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/BankAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="5" selection-start="1700" selection-end="1851" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="64" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
@@ -822,9 +808,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/BankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="20" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DBControl/TransactionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="8" selection-start="652" selection-end="725" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="23" selection-start="3870" selection-end="3870" vertical-scroll-proportion="0.53071254">
+        <state line="100" column="28" selection-start="4059" selection-end="4059" vertical-scroll-proportion="0.86614174">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

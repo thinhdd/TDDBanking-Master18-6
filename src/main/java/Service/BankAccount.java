@@ -50,4 +50,8 @@ public class BankAccount {
         //To change body of created methods use File | Settings | File Templates.
         return Transaction.getManyTransaction(accountNumber);
     }
+
+    public static List<TransactionDTO> getTransactions(String accountNumber, long start, long end) {
+        return null;
+    }
 }
