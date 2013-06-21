@@ -25,4 +25,8 @@ public class TransactionDAO {
         //To change body of created methods use File | Settings | File Templates.
         return null;
     }
+
+    public void getManyTransaction(String accountNumber, int i) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }

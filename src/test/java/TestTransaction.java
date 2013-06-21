@@ -103,4 +103,10 @@ public class TestTransaction {
         BankAccount.getTransactions(accountNumber, 1000l, 2000l);
         verify(mockTDAO).getManyTransaction(accountNumber,1000l, 2000l);
     }
+    @Test
+    public void testGetTransactionWithFilterCount()
+    {
+        BankAccount.getTransactions(accountNumber, 3);
+        verify(mockTDAO).getManyTransaction(accountNumber,3);
+    }
 }
