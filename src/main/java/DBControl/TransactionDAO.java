@@ -26,7 +26,8 @@ public class TransactionDAO {
         return null;
     }
 
-    public void getManyTransaction(String accountNumber, int i) {
+    public List<TransactionDTO> getManyTransaction(String accountNumber, int count) {
+        return null;
         //To change body of created methods use File | Settings | File Templates.
     }
 }
