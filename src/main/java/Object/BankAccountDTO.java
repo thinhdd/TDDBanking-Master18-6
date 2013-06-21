@@ -28,4 +28,8 @@ public class BankAccountDTO {
     public void setBalance(double amount) {
         this.balance=this.balance+amount;
     }
+
+    public long getTimeStamp() {
+        return 0;  //To change body of created methods use File | Settings | File Templates.
+    }
 }

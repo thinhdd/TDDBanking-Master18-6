@@ -109,4 +109,15 @@ public class TestTransaction {
         BankAccount.getTransactions(accountNumber, 3);
         verify(mockTDAO).getManyTransaction(accountNumber,3);
     }
+    @Test
+    public void testOpenAccountHasTimeStamp()
+    {
+        ArgumentCaptor<BankAccountDTO> ac = ArgumentCaptor.forClass(BankAccountDTO.class);
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000l);
+        BankAccountDTO account = BankAccount.openAccount(accountNumber);
+        verify(mockDAO).save(ac.capture());
+        assertEquals(ac.getValue().getAccountNumber(), accountNumber);
+        assertEquals(ac.getValue().getBalance(), 0.0);
+        assertEquals(ac.getValue().getTimeStamp(), 1000l);
+    }
 }
