@@ -3,6 +3,8 @@ package Service;
 import DBControl.TransactionDAO;
 import Object.*;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: thinhdd
@@ -22,4 +24,9 @@ public class Transaction {
         transactionDAO.save(transaction);
         //To change body of created methods use File | Settings | File Templates.
     }
+    public static List<TransactionDTO> getManyTransaction(String accountNumber)
+    {
+        return transactionDAO.getManyTransaction(accountNumber);
+    }
+
 }
